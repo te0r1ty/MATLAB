@@ -38,6 +38,7 @@ d3 = [a(:,1) a(:,2) a(:,4)];
 answer8ax = det(d1)/det(d)
 answer8ay = det(d2)/det(d)
 answer8az = det(d3)/det(d)
+
 %% task 8b
 b = [2 1 0 5;1 0 3 16;0 5 -1 10];
 
@@ -50,17 +51,20 @@ de3 = [b(:,1) b(:,2) b(:,4)];
 answer8bx = det(de1)/det(de)
 answer8by = det(de2)/det(de)
 answer8bz = det(de3)/det(de)
+
 %% task 9
 c9 = [1 1 1 2;1 3 1 4;1 1 3 0];
 
 D = rref(c9);
 
 answer9 = D(:,4)
+
 %% task 10
 A = [0 -2;1 -3];
 B = [5 1;-1 0];
 
 answer10 = (3*B)^2 - 2*(B*(A^-1) - eye(2))'
+
 %% task 11
 A = [3.81 0.28 1.28 0.75;2.25 1.32 4.58 0.49;5.31 6.38 0.98 1.04;9.39 2.45 3.35 2.28];
 b = [1;1;1;1];
@@ -68,10 +72,12 @@ b = [1;1;1;1];
 [L,U] = lu(A);
 answer11 = U\(L\b)
 answer11chek = A*answer11
+
 %% task 12
 matrix = rand(10,9);
 
 answer12 = matrix(end,end-1)
+
 %% task 13
 A = [1 -1 3 8;2 1 -4 -4;3 1 -3 1];
 
